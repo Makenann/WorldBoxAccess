@@ -209,15 +209,6 @@ The mod also includes accessibility support for major built-in windows such as:
 - equipment rain editor
 - tutorial flows
 `F1` gives context help in these windows too.
-## Building From Source
-Build and deploy with the provided PowerShell scripts:
-- `scripts\Build-Mod.ps1`
-- `scripts\Deploy-Mod.ps1`
-Do not use raw `dotnet build` as the normal workflow for this project.
-Important project references:
-- [docs/game-api.md](docs/game-api.md)
-- [project_status.md](project_status.md)
-- [docs/distribution-guide.md](docs/distribution-guide.md)
 ## Tester Feedback
 The most useful bug reports include:
 - the exact spoken line
