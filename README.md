@@ -204,6 +204,7 @@ The mod also includes accessibility support for major built-in windows such as:
 - world laws
 - world info
 - event history
+- trait editor
 - equipment rain editor
 - tutorial flows
 `F1` gives context help in these windows too.
