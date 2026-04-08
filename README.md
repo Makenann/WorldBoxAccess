@@ -19,32 +19,15 @@ Note: this project is now in a strong beta state. The mod is functionally comple
 ## Installation
 ### Requirements
 - WorldBox
-- BepInEx installed for WorldBox
+- the WorldBoxAccess release package
+### Step 1: Extract The Release Package
+The release package already includes:
+- BepInEx
+- `WorldBoxAccess.dll`
 - `Tolk.dll`
 - `nvdaControllerClient64.dll`
-### Step 1: Install BepInEx
-Install BepInEx for WorldBox first. Start the game once after installing it so the `BepInEx` folders are created, then close the game.
-Expected structure after BepInEx is installed:
-```text
-WorldBox\
-├── BepInEx\
-│   ├── core\
-│   └── plugins\
-├── worldbox.exe
-└── ...
-```
-### Step 2: Install WorldBoxAccess
-Copy the files like this:
-```text
-WorldBox\
-├── BepInEx\
-│   └── plugins\
-│       └── WorldBoxAccess.dll
-├── Tolk.dll
-├── nvdaControllerClient64.dll
-└── ...
-```
-### Step 3: Start the Game
+Extract everything from the zip archive directly into the main WorldBox game folder.
+### Step 2: Start The Game
 Launch WorldBox.
 If the mod loaded correctly, you should hear:
 `WorldBoxAccess loaded. F1 for help.`
@@ -57,7 +40,7 @@ Current accessibility coverage includes:
 - exact rectangle placement for many power families
 - one-shot power targeting
 - scanner navigation
-- creature follow/focus navigation
+- creature follow and focus navigation
 - directional world navigation
 - event speech and event history menu
 - inspect windows for units, cities, kingdoms, and deeper civilization windows
@@ -109,12 +92,12 @@ The mod supports multiple placement models, depending on how the real game power
 - single tile targeting
 - exact rectangle selection
 - one-shot special targeting
-- info/inspect targeting
+- info and inspect targeting
 Many powers now have spoken effect hints so players know whether a power is:
 - single target
 - rectangle based
 - brush based
-- moving cloud / moving area
+- moving cloud or moving area
 - charge-and-release
 ## Managers And Favorites
 ### Managers Hub
@@ -165,18 +148,18 @@ Examples of direct inspect actions:
 - open home city
 - open kingdom
 - open alliance
-- open culture / language / religion
-- open clan / family / plot / subspecies
+- open culture, language, or religion
+- open clan, family, plot, or subspecies
 - start civilization
 - found city
-- open capital / king / heir
-- open founder / leader / captain / instigator
+- open capital, king, or heir
+- open founder, leader, captain, or instigator
 ## Scanner System
 The scanner gives a structured way to search and jump through the world.
 - `Ctrl+PageUp` / `Ctrl+PageDown`: change categories
 - `Shift+PageUp` / `Shift+PageDown`: change subcategories
-- `PageUp` / `PageDown`: change item positions
-- `Alt+PageUp` / `Alt+PageDown`: read detailed items
+- `PageUp` / `PageDown`: change items
+- `Alt+PageUp` / `Alt+PageDown`: change current locations for the selected item
 - `Home`: move to current scanner result
 - `Alt+Home`: toggle scanner auto-move
 Scanner categories currently include:
@@ -193,7 +176,7 @@ This system moves the camera and map focus to the selected creature and speaks:
 - combat target when useful
 - health state
 - role context
-- city / kingdom context when relevant
+- city and kingdom context when relevant
 ## Events
 The event system is a major accessibility layer for WorldBox.
 ### Event Menu
@@ -218,7 +201,7 @@ This includes broad support for:
 ## Settings And Other Windows
 The mod also includes accessibility support for major built-in windows such as:
 - settings
-- save/load
+- save and load
 - quit
 - world laws
 - world info
