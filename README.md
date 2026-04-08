@@ -14,7 +14,6 @@ Note: this project is now in a strong beta state. The mod is functionally comple
 - Creature Focus
 - Events
 - Settings And Other Windows
-- Building From Source
 - Tester Feedback
 ## Installation
 ### Requirements
@@ -45,7 +44,6 @@ Current accessibility coverage includes:
 - event speech and event history menu
 - inspect windows for units, cities, kingdoms, and deeper civilization windows
 - manager hub and favorites
-- rename and favorite actions
 - world info, settings, saves, laws, and other major built-in windows
 ## Main Controls
 These are the main global controls. Use `F1` in-game for context-sensitive help.
