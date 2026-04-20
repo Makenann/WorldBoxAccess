@@ -1,18 +1,22 @@
 # WorldBoxAccess
-Screen reader accessibility for WorldBox
-This mod adds screen reader output, keyboard-friendly navigation, accessible managers, inspect windows, powers, scanner systems, and major gameplay support for WorldBox.
+Screen reader accessibility for WorldBox.
+WorldBoxAccess adds screen reader output, keyboard-friendly navigation, accessible managers, inspect windows, powers, scanner systems, and major gameplay support for WorldBox.
 Note: this project is now in a strong beta state. The mod is functionally complete, but runtime edge cases may still appear during broader tester use.
-## Table of Contents
+## Table Of Contents
 - Installation
 - What This Mod Covers
 - Main Controls
-- Gameplay Navigation
-- Powers And Placement
-- Managers And Favorites
+- Map Cursor
+- Directional Navigation
+- Powers Menu
+- Power Placement
+- Managers
+- Favorites
 - Inspect Windows
-- Scanner System
+- Scanner
 - Creature Focus
-- Events
+- Event Menu
+- Event Coverage
 - Settings And Other Windows
 - Tester Feedback
 ## Installation
@@ -50,14 +54,13 @@ These are the main global controls. Use `F1` in-game for context-sensitive help.
 - `F1`: read help for the current context
 - `F2`: open Managers
 - `F3`: open Favorites
+- `F4`: open the gameplay toolbar
 - `Tab`: open the powers menu
-- `Shift+Tab`: open the gameplay toolbar
 - `Alt+E`: open the event menu
 - `Alt+1` through `Alt+0`: set game speed
 - `Space`: pause or resume time
 - `Escape`: go back or open quit, depending on context
-## Gameplay Navigation
-### Map Cursor
+## Map Cursor
 The map cursor is the core gameplay navigation layer.
 - `Arrow Keys`: move between tiles
 - `Enter`: inspect the current tile or use the current map power, depending on context
@@ -67,7 +70,7 @@ The mod speaks:
 - buildings
 - units on the tile
 - city and kingdom context
-### Directional Navigation
+## Directional Navigation
 Directional navigation jumps between nearby world objects.
 - `Shift+Up` / `Shift+Down`: cycle categories
 - `Shift+Left` / `Shift+Right`: change tile distance in `Tiles`
@@ -79,13 +82,15 @@ Current categories:
 - creatures
 - buildings
 - tiles
-## Powers And Placement
+## Powers Menu
 The powers menu is fully keyboard-accessible.
 - `Tab`: open powers
 - `Up` / `Down`: move between categories and powers
 - `Right Arrow`: expand category
 - `Left Arrow`: collapse or return
 - `Enter`: activate current power
+- `Escape`: close the powers menu
+## Power Placement
 The mod supports multiple placement models, depending on how the real game power works:
 - single tile targeting
 - exact rectangle selection
@@ -97,8 +102,7 @@ Many powers now have spoken effect hints so players know whether a power is:
 - brush based
 - moving cloud or moving area
 - charge-and-release
-## Managers And Favorites
-### Managers Hub
+## Managers
 `F2` opens a blind-first hub that launches the real global WorldBox manager windows.
 Current manager entries include:
 - world info
@@ -111,14 +115,13 @@ Current manager entries include:
 - languages
 - religions
 - cultures
-- subspecies
 - plots
 - armies
 Inside the hub:
 - `Up` / `Down`: move between managers
 - `Enter` or `Right Arrow`: open current manager
 - `Escape`: close the hub
-### Favorites
+## Favorites
 `F3` opens Favorites.
 The favorites window can be used to review favorite units, and favorite state can also be toggled from many inspect and manager flows.
 ## Inspect Windows
@@ -136,7 +139,6 @@ Accessible inspect support includes:
 - religions
 - clans
 - families
-- subspecies
 The mod adds:
 - top summary rows for important information
 - direct related-object actions
@@ -147,12 +149,12 @@ Examples of direct inspect actions:
 - open kingdom
 - open alliance
 - open culture, language, or religion
-- open clan, family, plot, or subspecies
+- open clan, family, or plot
 - start civilization
 - found city
 - open capital, king, or heir
 - open founder, leader, captain, or instigator
-## Scanner System
+## Scanner
 The scanner gives a structured way to search and jump through the world.
 - `Ctrl+PageUp` / `Ctrl+PageDown`: change categories
 - `Shift+PageUp` / `Shift+PageDown`: change subcategories
@@ -175,26 +177,24 @@ This system moves the camera and map focus to the selected creature and speaks:
 - health state
 - role context
 - city and kingdom context when relevant
-## Events
-The event system is a major accessibility layer for WorldBox.
-### Event Menu
-- `Alt+E`: open event history
+## Event Menu
+`Alt+E` opens the event history menu.
 - `Up` / `Down`: move between events
 - `Left` / `Right`: change event categories
 - `Enter`: read selected event
 - `Space`: jump to event location
 - `Delete`: remove selected event
+- `Shift+Delete`: remove all events in the current category
 - `Escape`: close the event menu
-### Event Coverage
-The event system combines:
-- real built-in WorldBox history
-- custom blind-first event coverage where the base game does not log enough information
+## Event Coverage
+The event system combines real built-in WorldBox history with custom blind-first event coverage where the base game does not log enough information.
 This includes broad support for:
 - kingdom and city events
 - war and alliance events
 - civilization milestones
 - creature deaths and important births
 - disasters
+- achievement unlocks
 - culture, language, religion, clan, family, and related world-state changes
 ## Settings And Other Windows
 The mod also includes accessibility support for major built-in windows such as:
