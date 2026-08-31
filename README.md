@@ -2,23 +2,6 @@
 Screen reader accessibility for WorldBox.
 WorldBoxAccess adds screen reader output, keyboard-friendly navigation, accessible managers, inspect windows, powers, scanner systems, and major gameplay support for WorldBox.
 Note: this project is now in a strong beta state. The mod is functionally complete, but runtime edge cases may still appear during broader tester use.
-## Table Of Contents
-- Installation
-- What This Mod Covers
-- Main Controls
-- Map Cursor
-- Directional Navigation
-- Powers Menu
-- Power Placement
-- Managers
-- Favorites
-- Inspect Windows
-- Scanner
-- Creature Focus
-- Event Menu
-- Event Coverage
-- Settings And Other Windows
-- Tester Feedback
 ## Installation
 ### Requirements
 - WorldBox
